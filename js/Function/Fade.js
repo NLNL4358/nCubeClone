@@ -6,7 +6,7 @@ document.querySelector(".PageNation").classList.add("fade");
 document.addEventListener("DOMContentLoaded", () => {
   window.setTimeout(() => {
     document.querySelector(".PageNation").classList.remove("fade");
-  });
+  },100);
 });
 
 /*====== 변수 ==========*/
