@@ -1,5 +1,5 @@
 /* 페이지가 열리자마자 Fade 클래스 추가 */
-document.querySelector(".PageNation").classList.add("fade");
+// document.querySelector(".PageNation").classList.add("fade");
 
 
 /* 페이지가 모두 로드되면 Face 클래스 제거 */
