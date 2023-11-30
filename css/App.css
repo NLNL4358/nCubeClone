@@ -1,0 +1,10 @@
+.PageNation{
+    opacity: 1;
+    transition: 1s;
+}
+  .PageNation.fade{
+    opacity: 0;
+  }
+
+
+

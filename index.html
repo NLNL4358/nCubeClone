@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME | Ncube</title>
+
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+  <!-- 폰트 -->
+  <style>
+    /* Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+    
+  <!-- css -->
+  <link rel="stylesheet" href="./css/App.css">
+  <link rel="stylesheet" href="./css/Reset.css">
+  <link rel="stylesheet" href="./css/Header.css">
+  <link rel="stylesheet" href="./css/Footer.css">
+
+    <!-- Index css -->
+  <link rel="stylesheet" href="./css/IndexPage/Main.css">
+  <link rel="stylesheet" href="./css/IndexPage/BusinessSector.css">
+  <link rel="stylesheet" href="./css/IndexPage/PartnerCompany.css">
+  <link rel="stylesheet" href="./css/IndexPage/CompanyMap.css">
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- AOS 애니메이션 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <!-- 클론코딩 -  https://www.ncubeworld.net/ -->
+
+  <!-- 0. 헤더 -->
+  <Header>
+    <div class="header inner">  
+      <div class="headerContainer">
+        <div class="headerLeftWrap">
+          <a class="headerLogoATage" href="/index.html">
+            <img class="headerLogoImage" src="image/Logo.webp" alt="">
+          </a>
+        </div>
+        <div class="headerRightWrap">
+          <ul class="headerUl">
+            <!-- li는 현재 페이지일 경우 currentPage클래스를 가짐 -->
+            <li class="headerLi currentPageNav">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Home
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="./AboutUs.html" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                About us
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Project
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Culture
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Contact
+              </button>
+            </li>
+          </ul>
+          <div class="headerHamburgerWrap">
+            <!-- 클릭시 우측에서 메뉴가 나타남 -->
+            <button class="headerHamburgerButton">
+              <img src="image/headerHamburgerButton.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Header>
+  <!-- 페이지 이동이아닌 숨겼다가 보여주는 느낌으로 구현해야함 -->
+  <!-- header의 Navigation을 클릭하면 IndexPage의 opacity가 사라지는 애니메이션과함께 display가 none 되고 다음 페이지가 display none이 풀리고 opacity가 0->1로 되는느낌 -->
+  <!-- pageNation 동작 순서 : openPage로 index가 열리고 후에는 prevPage, currentPage 클래스로 동작 -->
+  <div class="PageNation IndexPage">
+
+    <!-- 1. Main Slide Section  -->
+    <section class="Main">
+      <div class="mainWrap">
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="mainSwipeImage" src="image/main/slide01.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="mainSwipeImage" src="image/main/slide02.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="mainSwipeImage" src="image/main/slide03.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="mainSwipeImage" src="image/main/slide04.webp" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="BusinessSector">
+      <h3 class="sectionName BusinessSectionName" data-aos="fade-up" data-aos-duration="3000">
+        사업분야
+      </h3>
+      <div class="BusinessTagWrap inner" data-aos="fade-up" data-aos-duration="3000">
+        <div class="BusinessTagContentsWrap">
+          <img src="image/Business/BusinessIcon01.webp" alt="">
+          <p class="BusinessTagName">Contents</p>
+          <span class="BusinessTagBody">세상을 즐겁게 만드는 새로운 현실,<br/>AR/VR/MR/메타버스 콘텐츠 제작</span>
+        </div>
+        <div class="BusinessTagContentsWrap">
+          <img src="image/Business/BusinessIcon02.webp" alt="">
+          <p class="BusinessTagName">Graphic Design</p>
+          <span class="BusinessTagBody">기술을 예술로 만드는 2D/3D<br/>그래픽 제작</span>
+        </div>
+        <div class="BusinessTagContentsWrap">
+          <img src="image/Business/BusinessIcon03.webp" alt="">
+          <p class="BusinessTagName">Hardware</p>
+          <span class="BusinessTagBody">기술을 현실로 구현하는 하드웨어<br/>제작</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="PartnerCompany">
+
+      <h3 class="sectionName PartnerCompanyName" data-aos="fade-up" data-aos-duration="3000">
+        Ncube와 함께 한 기관
+      </h3>
+
+      <div class="PartnerCompanyWrap inner">
+        <div class="PartnerCompanyImageGridWrap" data-aos="fade-up" data-aos-duration="3000">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage01.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage02.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage03.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage04.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage05.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage06.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage07.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage08.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage09.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage10.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage11.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage12.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage13.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage14.webp" alt="">
+          <img class="PartnerCompanyImage" src="image/PartnerCompany/PartnerCompanyImage15.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="CompanyMap">
+
+      <h3 class="sectionName CompanyMapName" data-aos="fade-up" data-aos-duration="3000">
+        찾아오시는 길
+      </h3>
+
+      <div class="CompanyMapContentsWrap inner">
+        <div class="CompanyMapConTentsLeftWrap">
+          <div class="CompanyMapLocationWrap" data-aos="fade-up" data-aos-duration="3000">
+            <h5 class="CompanyMapLocationName">주소</h5>
+            <span class="CompanyMapLocationBody fontFamilyPretendardLight">대전광역시 서구 만년로68번길 선인빌딩 4층</span>
+            <small class="CompanyMapLocationSmall fontFamilyPretendardLight">*주차는 해당건물(선인빌딩) 지하 주차장 이용</small>
+          </div>
+          <div class="CompanyMapSketchMapWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700">
+            <h5 class="CompanyMapSketchMapName">약도</h5>
+            <img class="CompanyMapSketchMapImage" src="image/CompanyMap/CompanyMap.webp" alt="">
+          </div>
+        </div>
+        <div class="CompanyMapConTentsRightWrap" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">
+          <h5 class="CompanyMapTransportationName">교통</h5>
+          <div class="CompanyMapSubwayWrap">
+            <span class="CompanyMapSubwayBody fontFamilyPretendardLight">지하철</span>
+            <small class="CompanyMapSubwaySmall fontFamilyPretendardLight">- 승차역 : 서대전네거리, 대전역<br>
+              - 도보이용 : 엑스포과학공원방향 → 도보 약15분<br>
+              - 버스이용 : 둔산경찰서 정류장(301번,604번,705번)<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;서구보건소 정류장 하차 → 도보 약6분</small>
+          </div>
+          <div class="CompanyMapBusWrap">
+            <span class="CompanyMapBusBody fontFamilyPretendardLight">버스
+            </span>
+            <small class="CompanyMapBusSmall fontFamilyPretendardLight">- 승차역 : - 104번, 301번, 318번, 514번, 604번, 606번, 705번, 911번
+              → 서구보건소 하차 → 도보 약6분<br/>
+          - 618번 → 문화예술의전당 하차 → 도보 약6분</small>
+          </div>
+          <div class="CompanyMapExpressBusWrap">
+            <span class="CompanyMapExpressBusBody fontFamilyPretendardLight">고속버스</span>
+            <small class="CompanyMapExpressBusSmall fontFamilyPretendardLight">- 대전정부청사 터미널</small>
+          </div>
+          <div class="CompanyMapCarWrap">
+            <span class="CompanyMapCarBody fontFamilyPretendardLight">자가용
+            </span>
+            <small class="CompanyMapExpressBusSmall fontFamilyPretendardLight">- 경부고속도로 → 회덕분기점 → 호남고속도로 → 북대전IC(대덕밸리IC) <br/>
+          - 통영대전고속도로 → 호남고속도로(서울방향) → 북대전IC(대덕밸리IC)</small>
+            <small class="CompanyMapExpressBusPointSmall fontFamilyPretendardLight">
+              *  북대전IC(대덕밸리IC)에서 승용차로 10분 거리
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
+  <Footer>
+    <div class="footer inner">
+      <div class="footerLeftWrap">
+        <!-- 클릭시 홈으로 가며 홈에서는 Page 상단으로 올라감 -->
+        <button class="footerlogoButton">
+          <img src="image/Logo.webp" alt="">
+        </button>
+      </div>
+      <div class="footerRightWrap">
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">ADD.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">대전광역시 서구 만년동 363, 선인빌딩 4층</span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">TEL.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">+82 70-4110-1208 </span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">FAX.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">+82 42-863-1208</span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">MAIL.</span>
+          <span class="footerTextBody fontFamilyPretendardLight"> contact@ncubeworld.com</span>
+        </div>
+      </div>
+    </div>
+  </Footer>
+
+  <!-- Function -->
+  <script src="js/Function/Fade.js"></script> <!-- Fade In 기능 -->
+
+  <!-- JavaScript -->
+  <script src="js/Header.js"></script>
+  <script src="js/Main.js"></script>
+  <script src="js/Footer.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

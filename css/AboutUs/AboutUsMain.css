@@ -1,0 +1,59 @@
+.AboutUsMain{
+  height: 1160px;
+  padding-top: 45px;
+
+}
+.AboutUsTextWrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.AboutUsMainLeftWrap, .AboutUsMainRightWrap{
+  width: 50%;
+}
+.AboutUsMainTextContents{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  column-gap: 20px;
+
+  padding-top: 15px;
+}
+.AboutUsMainTextContentsWrap{
+  position: relative;
+  padding-left: 20px;
+}
+.AboutUsMainLeftWrap .AboutUsMainTextContentsWrap::after, .AboutUsMainRightWrap .AboutUsMainTextContentsWrap::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 8px;
+}
+.AboutUsMainLeftWrap .AboutUsMainTextContentsWrap::after{
+  height: 675px;
+  background-image: url("../../image/AboutUs/Left_Rectangle.webp");
+}
+.AboutUsMainRightWrap .AboutUsMainTextContentsWrap::after{
+  height: 562px;
+  background-image: url("../../image/AboutUs/Right_Rectangle.webp");
+}
+.AboutUsMainTextContentsYear{
+  font-weight: bold;
+  width: 60px;
+}
+.AboutUsMainTextContentsAwardWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  row-gap: 5px;
+}
+.AboutUsMainTextContentsAward{
+  font-size: 16px;
+  text-align: center;
+  line-height: 28px;
+}

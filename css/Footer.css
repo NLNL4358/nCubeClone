@@ -1,0 +1,32 @@
+Footer{
+  height: 214px;
+}
+.footer{
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLeftWrap{
+  width: 760px;
+  height: 130px;
+}
+
+.footerRightWrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-right: auto;
+  height: 130px;
+}
+
+.footerTextHead, .footerTextBody{
+  color: #2B323D;
+  font-size: 14px;
+}
+.footerTextHead{
+  display: inline-block;
+  width: 65px;
+}

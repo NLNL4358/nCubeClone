@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AboutUs | Ncube</title>
+
+  <!-- 파비콘 -->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+  <!-- 폰트 -->
+  <style>
+    /* Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/App.css">
+  <link rel="stylesheet" href="./css/Reset.css">
+  <link rel="stylesheet" href="./css/Header.css">
+  <link rel="stylesheet" href="./css/Footer.css">
+
+
+  <!-- AboutUs css -->
+  <link rel="stylesheet" href="./css/AboutUs/AboutUsMain.css">
+
+  
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- AOS 애니메이션 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  
+  
+  <!-- 0. 헤더 -->
+  <Header>
+    <div class="header inner">  
+      <div class="headerContainer">
+        <div class="headerLeftWrap">
+          <a class="headerLogoATage" href="/index.html">
+            <img class="headerLogoImage" src="image/Logo.webp" alt="">
+          </a>
+        </div>
+        <div class="headerRightWrap">
+          <ul class="headerUl">
+            <!-- li는 현재 페이지일 경우 currentPage클래스를 가짐 -->
+            <li class="headerLi ">
+              <button class="headerNavButton" data-url="./index.html" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Home
+              </button>
+            </li>
+            <li class="headerLi currentPageNav">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                About us
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Project
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Culture
+              </button>
+            </li>
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+                Contact
+              </button>
+            </li>
+          </ul>
+          <div class="headerHamburgerWrap">
+            <!-- 클릭시 우측에서 메뉴가 나타남 -->
+            <button class="headerHamburgerButton">
+              <img src="image/headerHamburgerButton.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Header>
+
+  <div class="PageNation AboutPage">
+    <!-- About 페이지 -->
+    <div class="AboutUsMain inner">
+      <div class="AboutUsTextWrap">
+        <div class="AboutUsMainLeftWrap">
+          <h3 class="AboutUsMainName sectionName">연혁</h3>
+          <div class="AboutUsMainTextContentsWrap">
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2023
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 종합디자인전문회사 등록 [한국디자인진흥원]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 동영상 제작 및 배급업 등록 (직접생산확인증명 취득)
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2021
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 이러닝 사업자 등록 [한국에듀테크산업협회]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2020
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 관광기업 혁신 바우처(대형) 선정 [한국관광공사]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2019
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · Google 창구 프로그램 선정 [중소기업벤처부]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2018
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 스페인 바르셀로나 2018 MWC 전시회 출품 [VR 모션 시뮬레이터]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 벤처기업인증 취득 [중소벤처기업부]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · K-Global 300 기업 선정 [과학기술정보통신부]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 제5회 ICT 스마트디바이스 공모전 ‘최우수상’ 수상 [과학기술정보통신부]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 인디터 어워즈 TOP10 수상 [한국인디게임협회]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2017
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 대전 글로벌 게임센터 보육기업 선정 [대전정보문화산업진흥원]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 관광벤처사업 관광벤처기업 승격 [문화체육관광부]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · K-Champ Lab 5기 보육기업 선정 [경기창조경제혁신센터]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2016
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 창조관광사업 예비창조관광기업 선발 [문화체육관광부]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2015
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · K-Global S/W전문창업기획사 선발 [미래창조과학부]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2014
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 나라장터 정부 조달 업체 등록
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2013
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 맞춤형 창업지원사업 선발 [창업진흥원]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 법인 설립 및 글로벌 K-Startup 본선 진출 [방송통신위원회]
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="AboutUsMainRightWrap">
+          <h3 class="AboutUsMainName sectionName">프로젝트</h3>
+          <div class="AboutUsMainTextContentsWrap">
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2023
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 국립중앙의료원 개인보호복 착탈의 VR 교육 콘텐츠
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 상록청소년 수련관 미래직업체험 AR/VR 콘텐츠
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2022
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 기상청 날씨알리미 APP
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 한국교육과정평가원 ‘책열매’ Web 콘텐츠
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · ETRI(스마트조명IoT, 실감미디어, 데이터셋)
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · ADD(국방과학 연구소)
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2020
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 관광기업 혁신 바우처(대형) 선정 [한국관광공사]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2019
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 스페인 바르셀로나 2019 MWC 전시회 출품 [VR 모션 시뮬레이터]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · Google 창구 프로그램 선정 [중소기업벤처부]
+                </span>
+              </div>
+            </div>
+            <div class="AboutUsMainTextContents">
+              <h5 class="AboutUsMainTextContentsYear">
+                2018
+              </h5>
+              <div class="AboutUsMainTextContentsAwardWrap">
+                <span class="AboutUsMainTextContentsAward">
+                  · 스페인 바르셀로나 2018 MWC 전시회 출품 [VR 모션 시뮬레이터]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · 벤처기업인증 취득 [중소벤처기업부]
+                </span>
+                <span class="AboutUsMainTextContentsAward">
+                  · K-Global 300 기업 선정 [과학기술정보통신부]
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="AboutUsCertificateWrap">
+
+      </div>
+    </div>
+  </div>
+
+  
+  <Footer>
+    <div class="footer inner">
+      <div class="footerLeftWrap">
+        <!-- 클릭시 홈으로 가며 홈에서는 Page 상단으로 올라감 -->
+        <button class="footerlogoButton">
+          <img src="image/Logo.webp" alt="">
+        </button>
+      </div>
+      <div class="footerRightWrap">
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">ADD.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">대전광역시 서구 만년동 363, 선인빌딩 4층</span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">TEL.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">+82 70-4110-1208 </span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">FAX.</span>
+          <span class="footerTextBody fontFamilyPretendardLight">+82 42-863-1208</span>
+        </div>
+        <div class="footerTextLine">
+          <span class="footerTextHead fontFamilyPretendardLight">MAIL.</span>
+          <span class="footerTextBody fontFamilyPretendardLight"> contact@ncubeworld.com</span>
+        </div>
+      </div>
+    </div>
+  </Footer>
+
+  <!-- Function -->
+  <script src="js/Function/Fade.js"></script> <!-- Fade In 기능 -->
+
+  <!-- JavaScript -->
+  <script src="js/Header.js"></script>
+  <script src="js/Main.js"></script>
+  <script src="js/Footer.js"></script>
+  
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

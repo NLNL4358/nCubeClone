@@ -1,0 +1,38 @@
+.Main{
+  width: calc(100vw - (100vw - 100%));
+  min-width: 1903px;
+  height: 750px; 
+}
+.mainWrap,.mainSwiper,.swiper-wrapper,.wiper-slide{
+  height: 100%;
+}
+.mainSwipeImage{
+  width: 100%;
+}
+.mainSwiper .swiper-pagination-bullets{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.mainSwiper .swiper-pagination-bullet{
+  width: 8px;
+  height: 8px;
+  margin : 0px 8px !important;
+  opacity: 1;
+}
+.mainSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: transparent;
+  box-sizing: content-box;
+  border: 2px solid black;
+}
+
+.mainSwiper .swiper-button-next{
+  margin-right: 100px;
+}
+.mainSwiper .swiper-button-prev{
+  margin-left: 100px;
+}
+.mainSwiper .swiper-button-prev, .mainSwiper .swiper-button-next{
+  color: black;
+}

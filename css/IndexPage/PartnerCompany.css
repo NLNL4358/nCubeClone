@@ -1,0 +1,24 @@
+.PartnerCompany{
+  height: 810px;
+  background-color: white;
+
+}
+
+.PartnerCompanyName{
+  text-align: center;
+  padding: 160px 0px 60px 0px;
+}
+
+.PartnerCompanyImageGridWrap{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  row-gap: 25px;
+  justify-content: space-between;
+}
+.PartnerCompanyImage{
+  width: 227px;
+  height: 94px;
+  object-fit: cover;
+}
