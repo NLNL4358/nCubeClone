@@ -1,6 +1,6 @@
 .PageNation{
     opacity: 1;
-    transition: 1s;
+    transition: .8s;
 }
   .PageNation.fade{
     opacity: 0;
