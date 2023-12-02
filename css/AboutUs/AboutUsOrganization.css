@@ -1,0 +1,14 @@
+.organizationSection{
+  height: 1670px;
+  background-color: #F2F3F5;
+}
+.organizationInner{
+  height: 100%;
+  padding-top: 130px;
+}
+.organizationText{
+  font-weight: bold;
+}
+.organizationImage{
+  margin-top: 85px;
+}

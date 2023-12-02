@@ -1,7 +1,7 @@
 .AboutUsMain{
   height: 1160px;
   padding-top: 45px;
-
+  overflow: hidden;
 }
 .AboutUsTextWrap{
   width: 100%;
