@@ -22,6 +22,7 @@
 
 
   <!-- Culture css -->
+  <link rel="stylesheet" href="./css/Culture/Culture.css">
   
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -55,18 +56,18 @@
                 About us
               </button>
             </li>
-            <li class="headerLi currentPageNav">
-              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+            <li class="headerLi">
+              <button class="headerNavButton" data-url="./Project.html" class="fontFamilyPoppins" data-role="button" data-transition="fade">
                 Project
               </button>
             </li>
-            <li class="headerLi">
-              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+            <li class="headerLi currentPageNav">
+              <button class="headerNavButton" data-url="" class="fontFamilyPoppins" data-role="button" data-transition="fade">
                 Culture
               </button>
             </li>
             <li class="headerLi">
-              <button class="headerNavButton" data-url="#" class="fontFamilyPoppins" data-role="button" data-transition="fade">
+              <button class="headerNavButton" data-url="" class="fontFamilyPoppins" data-role="button" data-transition="fade">
                 Contact
               </button>
             </li>
@@ -82,8 +83,55 @@
     </div>
   </Header>
 
-  <div class="PageNation CulturePage">
-    
+  <div class="PageNation CulturePage fade">
+    <div class="CultureImageSection">
+      <div class="CultureWrap OurDay">
+        <div class="CultureWrapInner inner">
+          <h3 class="CultureName sectionName">어른의날</h3>
+          <span class="CultureText">
+            Ncube는 커뮤니티와 팀워크를 중요시하고 있습니다.<br/>격월로 평소 하고 싶었던 것을 체험할 수 있습니다.
+          </span>  
+        </div>
+        <div class="CultureImageWrap"> <!-- 움직이지않는 영역 -->
+          <div class="CultureImageMovingTrailer OurDayTrailer"> <!-- 움직이는 영역 -->
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage01_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage02_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage03_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage04_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage07_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage08_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage09_O.webp" alt="">
+            <img class="CultureImage OurDayImage" src="./image/Culture/ourCulture_cultureImage10_O.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="CultureWrap Crew">
+        <div class="CultureWrapInner inner">
+          <h3 class="CultureName sectionName">사내이벤트</h3>
+          <span class="CultureText">
+            Ncube 크루들의 특별한 기념일을 함께 합니다.<br/>회사의 창립기념일, 결혼식 등의 행사를 같이 합니다.
+          </span>
+        </div>
+        <div class="CultureImageWrap"> <!-- 움직이지않는 영역 -->
+          <div class="CultureImageMovingTrailer CrewTrailer"> <!-- 움직이는 영역 -->
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage05_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage06_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage11_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage12_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage13_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage14_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage15_E.webp" alt="">
+            <img class="CultureImage CrewImage" src="./image/Culture/Crew_cultureImage16_E.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="CultureWelfareSection">
+      <div class="WelfareInner inner">
+
+      </div>
+    </div>
   </div>
 
 
@@ -121,7 +169,7 @@
 
   <!-- JavaScript -->
   <script src="js/Header.js"></script>
-  <script src="js/Project/ProjectCategory.js"></script>
+  <script src="js/Culture/CultureAutoSlide.js"></script>
   <script src="js/Footer.js"></script>
   
   <!-- AOS -->

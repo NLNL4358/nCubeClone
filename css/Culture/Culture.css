@@ -1,0 +1,34 @@
+.CultureImageSection{
+  background-color: #F2F3F5;
+
+  padding-bottom: 112px;
+}
+
+.CultureName{
+  padding-top: 50px;
+}
+.CultureText{
+  display: inline-block;
+  margin: 15px 0px;
+}
+.CultureImageWrap{
+  width: calc(100vw - (100vw - 100%));
+  height: 370px;
+  overflow: hidden;
+  
+}
+.CultureImageMovingTrailer{
+  display: flex;
+  align-items: center;
+}
+.OurDayTrailer{
+  justify-content: flex-start;
+}
+.CrewTrailer{
+  justify-content: flex-end;
+}
+
+.CultureImage{
+  height: 370px;
+  padding-right: 16px;
+}
