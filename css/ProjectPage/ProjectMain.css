@@ -1,0 +1,106 @@
+
+.ProjectSectionName{
+  text-align: center;
+  margin: 35px 0px 25px 0px;
+}
+
+.ProjectCategoryButtonWrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  column-gap: 30px;
+}
+.ProjectCategoryButton{
+  width: 100px;
+  height: 48px;
+  border-radius: 10px;
+  box-shadow: -0.03px 2px 17px 2px rgba(162, 162, 162, 0.4);
+  font-weight: bold;
+
+  transition: 0.3s;  
+}
+.ProjectCategoryButton:hover, .ProjectCategoryButton.selected{
+  background-color: #D72524;
+  color: white;
+}
+
+.ProjectContentsSection{
+  margin-top: 35px;
+  width: calc(100vw - ( 100vw - 100% ));
+
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 578px);
+  row-gap: 25px;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+.ProjectContentsSection.fade{
+  opacity: 0;
+}
+
+.ProjectContentsWrap{
+  width: 578px;
+  height: 500px;
+
+  cursor: pointer;
+  transition: 0.5s;
+
+  position: relative;
+}
+.ProjectContentsWrap.fade{ /* 카테고리에서 사라지기 전 fade효과 */
+  opacity: 0;
+}
+.ProjectContentsWrap.none{ /* 카테고리에서 display none */
+  display: none;
+}
+
+
+.ProjectContentsWrap::before{
+  position: absolute;
+  
+  right: 19px;
+  top: 15px;
+
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #2B323D;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProjectContentsWrap.TypeContents::before{
+  content: "콘텐츠";
+}
+.ProjectContentsWrap.TypeSoftWare::before{
+  content: "소프트웨어";
+}
+.ProjectContentsWrap.TypeHardWare::before{
+  content: "하드웨어";
+}
+.ProjectContentsWrap.TypeOthers::before{
+  content: "기타";
+}
+
+.ProjectContentsWrap:hover{
+  transform: scale(1.05);
+}
+.ProjectContentsName{
+  margin-top: 4px;
+  font-weight: bold;
+}
+.ProjectContentsCustomerWrap{
+  margin-top: 3px;
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

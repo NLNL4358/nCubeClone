@@ -126,6 +126,11 @@ button{
   width: 1200px;
   margin: auto;
 }
+.largeInner{
+  width: 1903px;
+  margin: auto;
+  padding: 0px 49px;
+}
 
 .fontFamilyPoppins{
   font-family: 'Poppins',sans-serif;
