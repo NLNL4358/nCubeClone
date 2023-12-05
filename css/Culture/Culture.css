@@ -9,6 +9,8 @@
 }
 .CultureText{
   display: inline-block;
+  font-size: 20px;
+  line-height: calc(100% + 5px);
   margin: 15px 0px;
 }
 .CultureImageWrap{
@@ -31,4 +33,28 @@
 .CultureImage{
   height: 370px;
   padding-right: 16px;
+}
+
+
+.WelfareName{
+  padding-top: 100px;
+}
+
+.WelfareGridWrap{
+  margin-top: 55px;
+  margin-bottom: 90px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 40px;
+}
+.WelfareContentsName{
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.WelfareContentsText{
+  font-weight: lighter;
+  line-height: calc(100% + 8px);
+  color: #6B737D;
 }

@@ -23,7 +23,7 @@ for(let index = 0 ; index < nav.length ; index++){
     /* 이동 */
     window.setTimeout(()=>{
       goChangePage(index);
-    },800)
+    },1000)
   })
 }
 
