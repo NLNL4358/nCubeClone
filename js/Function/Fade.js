@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
 /* header nav Button */
 let nav = document.querySelectorAll(".headerNavButton");
 
+let headerLogoButton = document.querySelector(".headerLogoButton");
+let footerLogoButton = document.querySelector(".footerLogoButton");
+
+
+/* ======= 이벤트 ====== */
 for(let index = 0 ; index < nav.length ; index++){
   nav[index].addEventListener("click", (e) => {
     e.preventDefault();
@@ -27,7 +32,30 @@ for(let index = 0 ; index < nav.length ; index++){
   })
 }
 
+headerLogoButton.addEventListener("click", function(e){ /* 헤더 로고 클릭 */
+  e.preventDefault();
+  /* fadeOut */
+  document.querySelector(".PageNation").classList.add("fade");
+  window.setTimeout(()=>{
+    goIndexPage(headerLogoButton.dataset.url);
+  },1000)
+})
+
+footerLogoButton.addEventListener("click", function(e){ /* 푸터 로고 클릭 */
+  e.preventDefault();
+  /* fadeOut */
+  document.querySelector(".PageNation").classList.add("fade");
+  window.setTimeout(()=>{
+    goIndexPage(footerLogoButton.dataset.url);
+  },1000)
+})
+
+
 /*======== 함수 ==========*/
 goChangePage = (index) => {
   window.location.href = nav[index].dataset.url;
+}
+
+goIndexPage = (url) =>{
+  window.location.href = url;
 }
