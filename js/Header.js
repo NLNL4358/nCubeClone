@@ -11,6 +11,8 @@ $(document).ready(function(e){
   let PageNation = $(".PageNation");
   let PageNationRemember = 0;
 
+  /* 햄버거 버튼 */
+  let headerHamburgerWrap = $(".headerHamburgerWrap");
 
   /* ======= 이벤트 리스너 ======== */
         /* scroll 이벤트때는 $(window).on("wheel", function()..) 으로하면 딜레이가 있다. 고로 .scroll 이벤트를 사용함 */
@@ -29,6 +31,17 @@ $(document).ready(function(e){
       // changePageNation(i);
     })
   }
+
+  $(headerHamburgerWrap).click(function(e){
+    /* hiddenSection 히든 풀기 */
+    $(".hiddenSection").removeClass("hidden");
+
+    /* 1초후 wrap 히든 풀기 */
+    window.setTimeout(()=>{
+      $(".hiddenWrap").removeClass("hidden");
+    },1000)
+    
+  });
 
 
   /* ======= 함수 ======= */
